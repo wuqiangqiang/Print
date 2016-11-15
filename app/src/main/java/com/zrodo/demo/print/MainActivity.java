@@ -1,11 +1,13 @@
 package com.zrodo.demo.print;
 
 import android.app.PendingIntent;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -64,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
     private void initView(){
         //二维码和拍照
         btnGoFun = (Button)findViewById(R.id.btnGoFun);
-        btnGoFun.setOnClickListener(new OnClickListener() {
+        btnGoFun.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent it = new Intent();
@@ -75,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
 
         //打印
         btnGoPrint = (Button)findViewById(R.id.btnGoPrint);
-        btnGoPrint.setOnClickListener(new OnClickListener() {
+        btnGoPrint.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 goDemo();
