@@ -8,13 +8,62 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+
+        <activity
+            android:name="com.xmjcphone.demo.InitActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme2">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+                <data android:mimeType="text/plain" />
+                <data android:mimeType="*/*" />
+            </intent-filter>
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
         </activity>
+
+        <activity
+            android:name="com.xmjcphone.demo.DemoActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.xmjcphone.demo.DecodeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+
+        <activity
+            android:name="com.xmjcphone.demo.AnyPrinterActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+
+        <activity
+            android:name="com.xmjcphone.demo.JSUploadActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+
+        <service android:name="com.xmjcphone.myprinter.WorkService" />
+
+
     </application>
 
 </manifest>
