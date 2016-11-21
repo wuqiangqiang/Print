@@ -2,34 +2,40 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
-    <TextView android:id="@+id/tvDevid"
+    <TextView
+        android:id="@+id/tvDevid"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
-    <TextView android:id="@+id/tvDevParam"
+    <TextView
+        android:id="@+id/tvDevParam"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
-    <TextView android:id="@+id/tvUsbDev"
+    <TextView
+        android:id="@+id/tvUsbDev"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
-    <TextView android:id="@+id/tvDevPrinter"
+    <TextView
+        android:id="@+id/tvDevPrinter"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
     <Button
-        android:layout_marginTop="20dp"
         android:id="@+id/btnGoFun"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="去扫描和拍照"/>
+        android:layout_marginTop="20dp"
+        android:text="去扫描和拍照" />
 
-    <TextView android:id="@+id/tvDevChooseRect"
+    <TextView
+        android:id="@+id/tvDevChooseRect"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="1dp"
@@ -40,27 +46,31 @@
         android:id="@+id/rgRect"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <RadioButton
             android:id="@+id/rbJinbiao1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="金标仪1：(0,0,2048,1536)"/>
+            android:text="金标仪1：(0,0,2048,1536)" />
+
         <RadioButton
             android:id="@+id/rbJinbiao2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="金标仪2反屏：(0,0,2048,1536)"/>
+            android:text="金标仪2反屏：(0,0,2048,1536)" />
+
         <RadioButton
             android:id="@+id/rbShouchi1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="手持式1：(0,0,720,1280)"/>
+            android:text="手持式1：(0,0,720,1280)" />
+
         <RadioButton
             android:id="@+id/rbShouchiPro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="手持工程机：(0,0,540,960)"
-            android:visibility="gone"/>
+            android:visibility="gone" />
     </RadioGroup>
 
     <TextView
@@ -69,28 +79,31 @@
         android:background="@color/colorAccent" />
 
     <Button
-        android:layout_marginTop="20dp"
         android:id="@+id/btnGoPrint"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="普瑞特usb打印"/>
-    <Button
         android:layout_marginTop="20dp"
+        android:text="普瑞特usb打印" />
+
+    <Button
         android:id="@+id/btnAnyWifiPrint"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="无线打印"/>
+        android:layout_marginTop="20dp"
+        android:text="无线打印" />
+
     <Button
-        android:layout_marginTop="5dp"
         android:id="@+id/btnJS"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="江苏上传"/>
-    <Button
         android:layout_marginTop="5dp"
+        android:text="江苏上传" />
+
+    <Button
         android:id="@+id/btnCloseApp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="关闭App"/>
+        android:layout_marginTop="5dp"
+        android:text="关闭App" />
 
 </LinearLayout>

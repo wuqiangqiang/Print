@@ -74,7 +74,8 @@ public class DecodeActivity extends Activity  implements SurfaceHolder.Callback,
 				if (!isFinishing()) {
 					if(mError){
 						mError = false;
-						CameraManager.get().stopPreview();
+						CameraManager.get().
+								stopPreview();
 						CameraManager.get().closeDriver();
 						Capturehandler = null;
 						tvResult.setText("二维码解析失败。");
