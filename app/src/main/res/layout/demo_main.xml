@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/bg_color"
+    android:padding="10dp">
+    
+    <TextView 
+        android:id="@+id/tvPrtContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="None" />
+        
+    <Button
+        android:id="@+id/btnPrint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打印一行" />
+    <Button
+        android:id="@+id/btnPrint_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打印多行" />
+    <Button
+        android:id="@+id/btnPrint_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打印超多行" />
+    <Button
+        android:id="@+id/btnPrint_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="分段打印" />
+    <Button
+        android:id="@+id/btnPrint_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="无限打印" />
+    <Button
+        android:id="@+id/btnPrint_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="停止无限打印" />
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="返回" />
+
+
+</LinearLayout>
