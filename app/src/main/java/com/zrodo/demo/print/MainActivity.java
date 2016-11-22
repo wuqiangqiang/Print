@@ -167,7 +167,7 @@ public class MainActivity extends AppCompatActivity {
         tvDevChooseRect = (TextView) findViewById(R.id.tvDevChooseRect);
         tvDevChooseRect.setText("选择了：" + CoreUtils.frameRect.toString());
         rgRect = (RadioGroup) findViewById(R.id.rgRect);
-        rgRect.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+        rgRect.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 int radioButtonId = group.getCheckedRadioButtonId();

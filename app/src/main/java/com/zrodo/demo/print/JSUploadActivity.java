@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.BaseJsonHttpResponseHandler;
+import com.zrodo.demo.ServerConst;
 import com.zrodo.demo.utils.AppUtils;
 import com.zrodo.demo.utils.ComUtils;
 import com.zrodo.demo.utils.CoreUtils;
@@ -104,8 +105,6 @@ public class JSUploadActivity extends Activity {
     /**
      * 批量上传检测单
      *
-     * @param ctx
-     * @param orders
      */
     public void uploadOrders() {
         try {
