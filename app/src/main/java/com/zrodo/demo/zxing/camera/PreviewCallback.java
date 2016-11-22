@@ -22,7 +22,6 @@ import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 
-import com.xmjcphone.ComUtils;
 
 final class PreviewCallback implements Camera.PreviewCallback {
 

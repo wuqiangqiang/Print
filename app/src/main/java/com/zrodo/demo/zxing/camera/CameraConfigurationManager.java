@@ -27,8 +27,6 @@ import android.util.Log;
 import android.view.Display;
 import android.view.WindowManager;
 
-import com.xmjcphone.ComUtils;
-import com.xmjcphone.CoreUtils;
 
 final class CameraConfigurationManager {
 

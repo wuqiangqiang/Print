@@ -16,7 +16,7 @@
 
 package com.zrodo.demo.zxing.camera;
 
-import com.xmjcphone.AppUtils;
+
 
 import android.hardware.Camera;
 import android.os.Handler;

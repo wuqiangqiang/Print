@@ -30,10 +30,6 @@ import com.google.zxing.MultiFormatReader;
 import com.google.zxing.ReaderException;
 import com.google.zxing.Result;
 import com.google.zxing.common.HybridBinarizer;
-import com.xmjcphone.ComUtils;
-import com.xmjcphone.demo.R;
-import com.xmjcphone.zxing.camera.CameraManager;
-import com.xmjcphone.zxing.camera.PlanarYUVLuminanceSource;
 //import com.google.zxing.PlanarYUVLuminanceSource;
 
 final class DecodeHandler extends Handler {

@@ -30,10 +30,7 @@ import android.util.Log;
 
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.Result;
-import com.xmjcphone.demo.R;
-import com.xmjcphone.zxing.camera.CameraManager;
-import com.xmjcphone.zxing.view.ViewfinderResultPointCallback;
-import com.xmjcphone.zxing.view.ViewfinderView;
+import com.zrodo.demo.zxing.view.ViewfinderView;
 
 /**
  * This class handles all the messaging which comprises the state machine for

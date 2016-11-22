@@ -25,23 +25,18 @@ import android.widget.TextView;
 
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.Result;
-import com.xmjcphone.AppUtils;
-import com.xmjcphone.ComUtils;
-import com.xmjcphone.CoreUtils;
-import com.xmjcphone.FileUtils;
-import com.xmjcphone.zxing.camera.CameraManager;
-import com.xmjcphone.zxing.decoding.CaptureActivityHandler;
-import com.xmjcphone.zxing.decoding.InactivityTimer;
-import com.xmjcphone.zxing.view.ViewfinderView;
+import com.zrodo.demo.zxing.decoding.CaptureActivityHandler;
+import com.zrodo.demo.zxing.decoding.InactivityTimer;
+import com.zrodo.demo.zxing.view.ViewfinderView;
 
 public class DecodeActivity extends Activity  implements SurfaceHolder.Callback,AutoFocusCallback{
 
 	private static final String TAG = "PhoneDemo";
 
 	//二维码与检测运用
-	private InactivityTimer				inactivityTimer;	//定时器
-	private CaptureActivityHandler		Capturehandler;		//zxing 拍摄处理类
-	private ViewfinderView				viewfinderView;		//zxing 二维码扫描区域
+	private InactivityTimer inactivityTimer;	//定时器
+	private CaptureActivityHandler Capturehandler;		//zxing 拍摄处理类
+	private ViewfinderView viewfinderView;		//zxing 二维码扫描区域
 	private boolean						hasSurface;			//是否开启了surfaceview
 	private Vector<BarcodeFormat>		decodeFormats;		//zxing 解码类型
 	private String						characterSet;		//zxing 字符编码

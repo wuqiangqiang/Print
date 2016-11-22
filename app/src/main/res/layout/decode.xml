@@ -31,7 +31,6 @@
             android:layout_height="wrap_content"
             android:text="None"
             android:textSize="20sp"
-    		android:textColor="@color/green_normal"
     		android:layout_toRightOf="@id/img_pic_new"
             />
             
@@ -51,7 +50,7 @@
     			android:layout_height="50dp"
     			android:layout_weight="1"
     			android:text="扫描"
-    			android:textColor="@color/green_normal"
+    			android:textColor="@color/colorAccent"
     			android:background="@android:color/transparent"
                 />
             <Button 
@@ -60,7 +59,6 @@
     			android:layout_height="50dp"
     			android:layout_weight="1"
     			android:text="拍照"
-    			android:textColor="@color/green_normal"
     			android:background="@android:color/transparent"
                 />
             <Button 
@@ -69,7 +67,6 @@
     			android:layout_height="50dp"
     			android:layout_weight="1"
     			android:text="返回"
-    			android:textColor="@color/green_normal"
     			android:background="@android:color/transparent"
                 />
         </LinearLayout>
