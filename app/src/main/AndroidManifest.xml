@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.zrodo.demo.print">
 
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,11 +11,11 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name="com.xmjcphone.demo.InitActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="portrait"
-            android:theme="@style/MyTheme2">
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
                 <action android:name="android.intent.action.SEND_MULTIPLE" />
@@ -40,29 +41,29 @@
         </activity>
 
         <activity
-            android:name="com.xmjcphone.demo.DemoActivity"
+            android:name=".DemoActivity"
             android:label="@string/app_name"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="portrait">
         </activity>
 
         <activity
-            android:name="com.xmjcphone.demo.DecodeActivity"
+            android:name=".DecodeActivity"
             android:configChanges="orientation|keyboardHidden|screenSize">
         </activity>
 
         <activity
-            android:name="com.xmjcphone.demo.AnyPrinterActivity"
+            android:name=".AnyPrinterActivity"
             android:configChanges="orientation|keyboardHidden|screenSize">
         </activity>
 
         <activity
-            android:name="com.xmjcphone.demo.JSUploadActivity"
+            android:name=".JSUploadActivity"
             android:configChanges="orientation|keyboardHidden|screenSize">
         </activity>
 
-        <service android:name="com.xmjcphone.myprinter.WorkService" /><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
-     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <service android:name="com.zrodo.demo.WorkService" />
+
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
