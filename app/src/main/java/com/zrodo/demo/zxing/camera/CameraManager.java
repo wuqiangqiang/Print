@@ -16,8 +16,6 @@
 
 package com.zrodo.demo.zxing.camera;
 
-import java.io.IOException;
-
 import android.content.Context;
 import android.graphics.PixelFormat;
 import android.graphics.Point;
@@ -29,6 +27,9 @@ import android.os.Handler;
 import android.view.SurfaceHolder;
 
 import com.zrodo.demo.utils.ComUtils;
+import com.zrodo.demo.utils.CoreUtils;
+
+import java.io.IOException;
 
 
 /**
@@ -169,7 +170,7 @@ public final class CameraManager {
     public void closeDriver() {
         if (camera != null) {
 //			FlashlightManager.disableFlashlight();//delete by wujn
-            //add close flash light
+//            add close flash light
 //			Camera.Parameters mParameters = camera.getParameters();    
 //		    mParameters.setFlashMode(Camera.Parameters.FLASH_MODE_OFF);    
 //		    camera.setParameters(mParameters); 

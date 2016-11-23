@@ -1,15 +1,9 @@
 package com.zrodo.demo.print;
 
-import java.io.UnsupportedEncodingException;
-import java.lang.ref.WeakReference;
-
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.provider.Settings.Secure;
-import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -18,9 +12,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.lvrenyang.utils.DataUtils;
-import com.xmjcphone.AppUtils;
-import com.xmjcphone.myprinter.Global;
-import com.xmjcphone.myprinter.WorkService;
+import com.zrodo.demo.Global;
+import com.zrodo.demo.WorkService;
+
+import java.io.UnsupportedEncodingException;
+import java.lang.ref.WeakReference;
 
 /**
  * 不同机器usb的处理流的限制不同

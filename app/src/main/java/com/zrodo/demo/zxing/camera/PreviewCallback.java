@@ -22,6 +22,8 @@ import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 
+import com.zrodo.demo.utils.ComUtils;
+
 
 final class PreviewCallback implements Camera.PreviewCallback {
 

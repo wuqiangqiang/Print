@@ -16,9 +16,6 @@
 
 package com.zrodo.demo.zxing.camera;
 
-import java.lang.reflect.Method;
-import java.util.regex.Pattern;
-
 import android.content.Context;
 import android.graphics.Point;
 import android.hardware.Camera;
@@ -26,6 +23,12 @@ import android.os.Build;
 import android.util.Log;
 import android.view.Display;
 import android.view.WindowManager;
+
+import com.zrodo.demo.utils.ComUtils;
+import com.zrodo.demo.utils.CoreUtils;
+
+import java.lang.reflect.Method;
+import java.util.regex.Pattern;
 
 
 final class CameraConfigurationManager {
@@ -80,7 +83,7 @@ final class CameraConfigurationManager {
             //for pad_jinbiao_2
 //			cameraResolution.x = 1440;
 //			cameraResolution.y = 1080;
-            //for phone_jinbiao_1
+//            for phone_jinbiao_1
 //			cameraResolution.x = 800;
 //			cameraResolution.y = 480;
             cameraResolution = CoreUtils.HandlePoint;
