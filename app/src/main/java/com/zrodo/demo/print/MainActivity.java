@@ -53,7 +53,7 @@ public class MainActivity extends Activity {
 
 
     private static final int GET_THREAD_CODE = 0x1;
-    //get thread to probe
+    //get thread to probe探测
     private Handler handler = new Handler() {
         @Override
         public void dispatchMessage(Message msg) {
