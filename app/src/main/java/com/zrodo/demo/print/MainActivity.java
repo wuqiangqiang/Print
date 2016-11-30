@@ -62,7 +62,6 @@ public class MainActivity extends Activity {
                 case GET_THREAD_CODE:
                     Log.d(TAG, "--> handler continue probe");
                     probe();
-
                     break;
 
                 default:
