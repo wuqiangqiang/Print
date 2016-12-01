@@ -17,7 +17,7 @@
     <item type="id" name="tv_chk_fileno" />                        <!-- 养殖档案 -->
     <item type="id" name="tv_chk_variety" />                    <!-- 品种名称 -->
     <item type="id" name="tv_chk_waijian_huo_juanpi" />        <!-- 外检或圈批：给出证用的 -->
-    <item type="id" name="tv_chk_waijian_huo_juanpi_name" />    <!-- ****标题：外检或圈批**** -->
+    <item type="id" name="tv_chk_waijian_huo_juanpi_name" />    <!-- 标题：外检或圈批 -->
 
     <!-- 清除数据的控件 -->
     <item type="id" name="bt_clear_barnsbatchno"></item>
