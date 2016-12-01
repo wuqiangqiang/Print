@@ -1,11 +1,6 @@
 package com.zrodo.demo.print;
 
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Vector;
-
 import android.app.Activity;
-import android.content.pm.ActivityInfo;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.hardware.Camera;
@@ -25,9 +20,18 @@ import android.widget.TextView;
 
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.Result;
+import com.zrodo.demo.utils.AppUtils;
+import com.zrodo.demo.utils.ComUtils;
+import com.zrodo.demo.utils.CoreUtils;
+import com.zrodo.demo.utils.FileUtils;
+import com.zrodo.demo.zxing.camera.CameraManager;
 import com.zrodo.demo.zxing.decoding.CaptureActivityHandler;
 import com.zrodo.demo.zxing.decoding.InactivityTimer;
 import com.zrodo.demo.zxing.view.ViewfinderView;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Vector;
 
 public class DecodeActivity extends Activity  implements SurfaceHolder.Callback,AutoFocusCallback{
 
@@ -69,8 +73,7 @@ public class DecodeActivity extends Activity  implements SurfaceHolder.Callback,
 				if (!isFinishing()) {
 					if(mError){
 						mError = false;
-						CameraManager.get().
-								stopPreview();
+						CameraManager.get().stopPreview();
 						CameraManager.get().closeDriver();
 						Capturehandler = null;
 						tvResult.setText("二维码解析失败。");

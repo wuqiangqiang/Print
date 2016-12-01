@@ -16,9 +16,6 @@
 
 package com.zrodo.demo.zxing.decoding;
 
-import java.util.HashMap;
-import java.util.Vector;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -30,7 +27,13 @@ import android.util.Log;
 
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.Result;
+import com.zrodo.demo.print.R;
+import com.zrodo.demo.zxing.camera.CameraManager;
+import com.zrodo.demo.zxing.view.ViewfinderResultPointCallback;
 import com.zrodo.demo.zxing.view.ViewfinderView;
+
+import java.util.HashMap;
+import java.util.Vector;
 
 /**
  * This class handles all the messaging which comprises the state machine for
@@ -67,8 +70,7 @@ public final class CaptureActivityHandler extends Handler {
         this.vfv = vfv;
 
         // 获得解码线程
-        decodeThread = new DecodeThread(this, decodeFormats, characterSet,
-                new ViewfinderResultPointCallback(this.vfv));
+        decodeThread = new DecodeThread(this, decodeFormats, characterSet, new ViewfinderResultPointCallback(this.vfv));
 
         //开启解码线程
         decodeThread.start();
@@ -105,8 +107,7 @@ public final class CaptureActivityHandler extends Handler {
                 Log.d(TAG, "Got decode succeeded message");
                 state = State.SUCCESS;
                 Bundle bundle = message.getData();
-                Bitmap barcode = bundle == null ? null : (Bitmap) bundle
-                        .getParcelable(DecodeThread.BARCODE_BITMAP);
+                Bitmap barcode = bundle == null ? null : (Bitmap) bundle.getParcelable(DecodeThread.BARCODE_BITMAP);
                 // activity.handleDecode((Result) message.obj, barcode);
 
                 Message chkMsg = new Message();

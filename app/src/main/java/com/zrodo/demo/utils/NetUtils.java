@@ -452,7 +452,7 @@ public class NetUtils {
                 ArrayList mLinkAddresses = (ArrayList) getDeclaredField(linkProperties, "mLinkAddresses");
                 if (mLinkAddresses != null && mLinkAddresses.size() > 0) {
                     Object linkAddressObj = mLinkAddresses.get(0);
-                    address = linkAddressObj.getClass().getMethod("getNetworkPrefixLength", new Class[]{}).invoke(linkAddressObj, null) + "";
+                    address = linkAddressObj.getClass().getMethod("getNetworkPrefixLength", new Class[]{}).invoke(linkAddressObj, new Object[]{}) + "";
                 }
             }
 

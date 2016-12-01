@@ -16,9 +16,6 @@
 
 package com.zrodo.demo.zxing.view;
 
-import java.util.Collection;
-import java.util.HashSet;
-
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -27,6 +24,11 @@ import android.util.AttributeSet;
 import android.view.View;
 
 import com.google.zxing.ResultPoint;
+import com.zrodo.demo.utils.ComUtils;
+import com.zrodo.demo.zxing.camera.CameraManager;
+
+import java.util.Collection;
+import java.util.HashSet;
 
 /**
  * This view is overlaid on top of the camera preview. It adds the viewfinder

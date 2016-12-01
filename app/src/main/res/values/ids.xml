@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Zxing Messages IDs -->
+    <item type="id" name="auto_focus" />
+    <item type="id" name="decode" />
+    <item type="id" name="decode_failed" />
+    <item type="id" name="decode_succeeded" />
+    <item type="id" name="encode_failed" />
+    <item type="id" name="encode_succeeded" />
+    <item type="id" name="launch_product_query" />
+    <item type="id" name="quit" />
+    <item type="id" name="restart_preview" />
+    <item type="id" name="return_scan_result" />
+
+    <!-- 自动排布的检测界面几个重要控件 -->
+    <item type="id" name="tv_chk_barnsbatchno" />                <!-- 圈舍批次号 -->
+    <item type="id" name="tv_chk_fileno" />                        <!-- 养殖档案 -->
+    <item type="id" name="tv_chk_variety" />                    <!-- 品种名称 -->
+    <item type="id" name="tv_chk_waijian_huo_juanpi" />        <!-- 外检或圈批：给出证用的 -->
+    <item type="id" name="tv_chk_waijian_huo_juanpi_name" />    <!-- ****标题：外检或圈批**** -->
+
+    <!-- 清除数据的控件 -->
+    <item type="id" name="bt_clear_barnsbatchno"></item>
+    <item type="id" name="bt_clear_fileno"></item>
+    <item type="id" name="bt_clear_variety"></item>
+    <item type="id" name="bt_clear_waijian_huo_juanpi" />        <!-- 外检或圈批：给出证用的 -->
+
+
+</resources>

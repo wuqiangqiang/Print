@@ -2,40 +2,41 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
-    
-    <TextView 
+    android:orientation="vertical">
+
+    <TextView
         android:id="@+id/tvJSMsg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="xxx"
-        android:textSize="30sp"
-        />
-    
+        android:textSize="30sp" />
+
     <Button
-        android:layout_marginTop="5dp"
         android:id="@+id/btnJSUpload"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="FinalHttp上传"/>
-    <Button
         android:layout_marginTop="5dp"
+        android:text="FinalHttp上传" />
+
+    <Button
         android:id="@+id/btnJSAsyncUpload"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="AsyncHttpClient上传"/>
-    <Button
         android:layout_marginTop="5dp"
+        android:text="AsyncHttpClient上传" />
+
+    <Button
         android:id="@+id/btnJSDefaultUpload"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="DefaultHttpClient上传"/>
-    
-    <Button
         android:layout_marginTop="5dp"
+        android:text="DefaultHttpClient上传" />
+
+    <Button
         android:id="@+id/btnBack"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="返回"/>
+        android:layout_marginTop="5dp"
+        android:text="返回" />
 
 </LinearLayout>

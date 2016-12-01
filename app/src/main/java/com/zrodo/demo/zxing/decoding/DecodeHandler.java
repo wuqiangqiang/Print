@@ -16,8 +16,6 @@
 
 package com.zrodo.demo.zxing.decoding;
 
-import java.util.Hashtable;
-
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -30,6 +28,12 @@ import com.google.zxing.MultiFormatReader;
 import com.google.zxing.ReaderException;
 import com.google.zxing.Result;
 import com.google.zxing.common.HybridBinarizer;
+import com.zrodo.demo.print.R;
+import com.zrodo.demo.utils.ComUtils;
+import com.zrodo.demo.zxing.camera.CameraManager;
+import com.zrodo.demo.zxing.camera.PlanarYUVLuminanceSource;
+
+import java.util.Hashtable;
 //import com.google.zxing.PlanarYUVLuminanceSource;
 
 final class DecodeHandler extends Handler {
